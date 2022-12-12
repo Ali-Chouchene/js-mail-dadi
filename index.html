@@ -14,13 +14,13 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!--stylesheet-->
     <link rel="stylesheet" href="css/style.css">
-    <title>FizzBuzzDOM
+    <title>Dadi & Email
     </title>
 </head>
 
 <body class="bg-dark">
     <main>
-        <section id="es-1">
+        <section id="es-1" class="py-5">
             <h1 class="text-center text-white my-5">Chi fa il numero più alto vince</h1>
             <div class="container ">
                 <div class="row row-cols-md-2 text-white">
@@ -31,7 +31,9 @@
                     <div class="col user" id="user"></div>
                 </div>
                 <div class="row text-white text-center">
-                    <div id="winner " class="col-12"></div>
+                    <div class="col-12">
+                        <h1 id="vincitore"></h1>
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center gap-5 my-5">
                     <button id="play" type="button" class="btn btn-outline-success">Gioca</button>
@@ -39,7 +41,33 @@
                 </div>
             </div>
         </section>
-        <section id="es-2">
+        <hr class="text-white my-5">
+
+
+        <section id="es-2" class="py-5">
+            <div class="container p-5">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label text-white">Email address</label>
+                        <input type="email" class="form-control" id="useremail" value="user@email.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <button id="login" type="button" class="btn btn-primary">Login</button>
+                </form>
+                <div class="text-center text-white">
+                    <h1 id="esito"></h1>
+                </div>
+            </div>
+            <div class="mt-5 text-white container">
+                <h4>per provare</h4>
+                <ul>
+                    <li>my@email.com</li>
+                    <li>user@email.it</li>
+                    <li>broly@email.com</li>
+                    <li>ali@email.com</li>
+                    <li>user@email.com</li>
+                </ul>
+            </div>
 
         </section>
     </main>

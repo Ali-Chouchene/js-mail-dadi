@@ -10,7 +10,7 @@ const computer = document.getElementById("cpu");
 const persona = document.getElementById("user");
 const play = document.getElementById("play");
 const reset = document.getElementById("reset");
-const result = document.getElementById("winner");
+const result = document.getElementById("vincitore");
 
 
 play.addEventListener("click", function () {
@@ -28,15 +28,15 @@ play.addEventListener("click", function () {
 
 
     if (cpu > user) {
-        // alert("il Computer ha vinto!");
-        setTimeout(function () { alert("il Computer ha vinto!"); }, 500);
+        winner = "Hai perso!";
     } else if (user > cpu) {
-        // alert("hai vinto!");
-        setTimeout(function () { alert("hai vinto!"); }, 500);
+        winner = "Hai vinto!";
     } else {
-        alert("Pareggio!");
-        setTimeout(function () { alert("Pareggio!"); }, 500);
+        winner = "Pareggio!";
+
     }
+    result.innerHTML = winner;
+
 
     reset.addEventListener("click", function () {
         computer.innerHTML = "";
@@ -49,7 +49,56 @@ play.addEventListener("click", function () {
 
 /*-----------------------------------------------------------------------------------*/
 
-               // SECONDO ESERCIZIO
+// SECONDO ESERCIZIO
 
 /*---------------------------------------------------------------------------------- */
+
+/*
+Inventa una lista di email autorizzate
+Chiedi all’utente la sua email, con un piccolo form.
+controlla che sia nella lista di chi può accedere,
+stampa un messaggio appropriato sull’esito del controllo.
+Prima di partire a scrivere codice poniamoci qualche domanda:
+Che ci sia un array da qualche parte?
+Cosa devo controllare esattamente?
+*/
+
+
+
+
+const emails = ["user@email.com", "ali@email.com", "broly@email.com", "user@email.it", "my@email.com"];
+
+const emailElement = document.getElementById("userEmail");
+console.log(emailElement.value)
+const accesso = document.getElementById("esito");
+const btn = document.getElementById("login");
+
+btn.addEventListener("click", function () {
+
+    if (emails.indexOf(emailElement.value === emails)) {
+        esito = "Welcome!";
+    } else {
+        esito = "Wrong Email!";
+    }
+
+
+    accesso.innerHTML = esito;
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
