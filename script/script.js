@@ -68,14 +68,14 @@ Cosa devo controllare esattamente?
 
 const emails = ["user@email.com", "ali@email.com", "broly@email.com", "user@email.it", "my@email.com"];
 
-const emailElement = document.getElementById("userEmail");
+const emailElement = document.getElementById("useremail");
 console.log(emailElement.value)
 const accesso = document.getElementById("esito");
 const btn = document.getElementById("login");
 
 btn.addEventListener("click", function () {
 
-    if (emails.indexOf(emailElement.value === emails)) {
+    if (emails.indexOf(emailElement.value)) {
         esito = "Welcome!";
     } else {
         esito = "Wrong Email!";
