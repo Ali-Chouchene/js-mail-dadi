@@ -75,7 +75,7 @@ const btn = document.getElementById("login");
 
 btn.addEventListener("click", function () {
 
-    if (emails.indexOf(emailElement.value)) {
+    if (emails.includes(emailElement.value)) {
         esito = "Welcome!";
     } else {
         esito = "Wrong Email!";
